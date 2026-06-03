@@ -16,6 +16,10 @@
     @apply text-lg border-2 border-solid border-primary text-primary flex justify-center items-center px-12 py-4 min-w-55 relative overflow-hidden cursor-pointer;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: var(--color-secondary);
   color: var(--color-primary);
