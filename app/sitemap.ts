@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
+import { META_DATA } from "@/utils/constant";
 
-const BASE_URL = "https://www.myzushi.se";
+const BASE_URL = META_DATA.baseUrl;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -18,12 +19,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${BASE_URL}/lunch-menu`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/take-away`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,

@@ -6,7 +6,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Kontakt",
   description:
-    "Kontakta Myzushi i Helsingborg. Adress: Elinebergsplatsen 5. Öppettider, telefon och karta.",
+    `Kontakta ${META_DATA.appName} i Helsingborg. Adress: ${META_DATA.address}. Öppettider, telefon och karta.`,
   alternates: { canonical: "/contact" },
 };
 
@@ -22,11 +22,21 @@ const OPENING_HOURS = {
 };
 
 const SOCIAL = [
-  { href: "https://facebook.com", icon: "/icons/facebook.svg", label: "Facebook" },
+  {
+    href: "https://facebook.com",
+    icon: "/icons/facebook.svg",
+    label: "Facebook",
+  },
   { href: "https://tiktok.com", icon: "/icons/tiktok.svg", label: "TikTok" },
 ];
 
-function HoursBlock({ title, hours }: { title: string; hours: typeof OPENING_HOURS.dineIn }) {
+function HoursBlock({
+  title,
+  hours,
+}: {
+  title: string;
+  hours: typeof OPENING_HOURS.dineIn;
+}) {
   return (
     <div className="text-center lg:text-left">
       <h3 className="text-lg font-semibold mb-4 tracking-wide">{title}</h3>
@@ -59,7 +69,9 @@ export default function ContactPage() {
         {/* Contact info */}
         <div className="space-y-10 text-center lg:text-left">
           <div>
-            <h3 className="text-lg font-semibold mb-4 tracking-wide">Hitta oss</h3>
+            <h3 className="text-lg font-semibold mb-4 tracking-wide">
+              Hitta oss
+            </h3>
             <ul className="space-y-3 text-sm">
               <li>
                 <Link
@@ -93,7 +105,9 @@ export default function ContactPage() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4 tracking-wide">Följ oss</h3>
+            <h3 className="text-lg font-semibold mb-4 tracking-wide">
+              Följ oss
+            </h3>
             <div className="flex gap-4 justify-center lg:justify-start">
               {SOCIAL.map(({ href, icon, label }) => (
                 <Link
@@ -104,7 +118,12 @@ export default function ContactPage() {
                   className="opacity-70 hover:opacity-100 transition-opacity"
                   aria-label={label}
                 >
-                  <Image src={icon} alt={label} width={22} height={22} />
+                  <Image
+                    src={icon}
+                    alt={label}
+                    width={22}
+                    height={22}
+                  />
                 </Link>
               ))}
             </div>
@@ -113,9 +132,15 @@ export default function ContactPage() {
 
         {/* Opening hours */}
         <div className="space-y-10">
-          <HoursBlock title="Öppettider" hours={OPENING_HOURS.dineIn} />
+          <HoursBlock
+            title="Öppettider"
+            hours={OPENING_HOURS.dineIn}
+          />
           <div className="border-t border-primary/15 pt-10">
-            <HoursBlock title="Öppettider avhämtning" hours={OPENING_HOURS.takeAway} />
+            <HoursBlock
+              title="Öppettider avhämtning"
+              hours={OPENING_HOURS.takeAway}
+            />
           </div>
           <p className="text-primary/40 text-xs leading-relaxed text-center lg:text-left">
             Under helgdagar och röda dagar kan öppettiderna variera. Se vår
@@ -133,7 +158,10 @@ export default function ContactPage() {
             src={`https://maps.google.com/maps?q=${encodeURIComponent(META_DATA.address)}&z=16&output=embed`}
             width="100%"
             height="100%"
-            style={{ border: 0, filter: "grayscale(1) invert(0.9) contrast(0.85)" }}
+            style={{
+              border: 0,
+              filter: "grayscale(1) invert(0.9) contrast(0.85)",
+            }}
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

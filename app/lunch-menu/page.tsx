@@ -5,7 +5,7 @@ import React from "react";
 export const metadata: Metadata = {
   title: "Lunchmeny",
   description:
-    "Lunchmeny 139kr – inkl. miso soppa, kaffe och te. Serveras 11:30–14 varje vardag. Välkommen till Myzushi i Helsingborg.",
+    `Lunchmeny 139kr – inkl. miso soppa, kaffe och te. Serveras 11:30–14 varje vardag. Välkommen till ${META_DATA.appName} i Helsingborg.`,
   alternates: { canonical: "/lunch-menu" },
 };
 

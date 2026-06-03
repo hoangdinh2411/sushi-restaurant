@@ -5,18 +5,28 @@ import ParallaxScrollProvider from "@/providers/ParallaxScrollProvider";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import Hero from "@/components/hero/Hero";
+import { META_DATA } from "@/utils/constant";
+
+const APP_TITLE = `${META_DATA.appName} – Sushi & Japansk Mat i Helsingborg`;
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.myzushi.se"),
+  metadataBase: new URL(META_DATA.baseUrl),
   title: {
-    default: "Myzushi – Sushi & Japansk Mat i Helsingborg",
-    template: "%s | Myzushi",
+    default: APP_TITLE,
+    template: `%s | ${META_DATA.appName}`,
   },
-  description:
-    "Välkommen till Myzushi – din destination för autentisk sushi, japanska bowls och vietnamesisk mat i Helsingborg. Beställ take away eller boka bord.",
-  keywords: ["sushi", "japansk mat", "helsingborg", "take away", "myzushi", "japanska bowls", "vietnamesisk mat"],
-  authors: [{ name: "Myzushi", url: "https://www.myzushi.se" }],
-  creator: "Myzushi",
+  description: `Välkommen till ${META_DATA.appName} – din destination för autentisk sushi, japanska bowls och vietnamesisk mat i Helsingborg. Beställ take away eller boka bord.`,
+  keywords: [
+    "sushi",
+    "japansk mat",
+    "helsingborg",
+    "take away",
+    "myzushi",
+    "japanska bowls",
+    "vietnamesisk mat",
+  ],
+  authors: [{ name: META_DATA.appName, url: META_DATA.baseUrl }],
+  creator: META_DATA.appName,
   icons: {
     icon: [
       { url: "/images/favicon-16x16.png", sizes: "16x16", type: "image/png" },
@@ -24,32 +34,40 @@ export const metadata: Metadata = {
     ],
     apple: { url: "/images/apple-touch-icon.jpg" },
     other: [
-      { rel: "icon", url: "/images/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
-      { rel: "icon", url: "/images/android-chrome-512x512.png", sizes: "512x512", type: "image/png" },
+      {
+        rel: "icon",
+        url: "/images/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        rel: "icon",
+        url: "/images/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
     ],
   },
   openGraph: {
     type: "website",
     locale: "sv_SE",
-    url: "https://www.myzushi.se",
-    siteName: "Myzushi",
-    title: "Myzushi – Sushi & Japansk Mat i Helsingborg",
-    description:
-      "Välkommen till Myzushi – autentisk sushi, japanska bowls och vietnamesisk mat i Helsingborg.",
+    url: META_DATA.baseUrl,
+    siteName: META_DATA.appName,
+    title: APP_TITLE,
+    description: `Välkommen till ${META_DATA.appName} – autentisk sushi, japanska bowls och vietnamesisk mat i Helsingborg.`,
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Myzushi – Sushi & Japansk Mat i Helsingborg",
+        alt: APP_TITLE,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Myzushi – Sushi & Japansk Mat i Helsingborg",
-    description:
-      "Välkommen till Myzushi – autentisk sushi och japansk mat i Helsingborg.",
+    title: APP_TITLE,
+    description: `Välkommen till ${META_DATA.appName} – autentisk sushi och japansk mat i Helsingborg.`,
     images: ["/images/og-image.jpg"],
   },
   robots: {

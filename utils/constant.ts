@@ -1,6 +1,7 @@
 export const META_DATA = {
-  appName: "Myzushi",
+  appName: "Myzuki",
   address: "Elinebergsplatsen 5, Helsingborg",
   domain: "www.myzushi.se",
+  baseUrl: "https://www.myzushi.se",
   phone: 123456789,
 };
