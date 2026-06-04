@@ -20,8 +20,8 @@ export default function OpeningHours() {
         </h3>
 
         <div className="space-y-3 text-lg lg:text-2xl font-bold">
-          <p>Måndag – Torsdag 11.30 – 20</p>
-          <p>Lördag - Söndag 12 – 20</p>
+          <p>Måndag – Torsdag 11.30 – 21</p>
+          <p>Lördag - Söndag 12 – 21</p>
         </div>
 
         <div className="mt-4 text-sm lg:text-base">

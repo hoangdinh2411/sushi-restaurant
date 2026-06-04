@@ -12,7 +12,10 @@ export const metadata: Metadata = {
 
 export default function MenuPage() {
   return (
-    <article className="py-25 w-full max-w-5xl mx-auto px-4 lg:px-0">
+    <article
+      className="py-25 w-full max-w-5xl mx-auto px-4 lg:px-0"
+      id="menu"
+    >
       <div className="text-center mb-16 px-2">
         <h6 className="text-xl font-medium tracking-widest uppercase">
           {META_DATA.appName}

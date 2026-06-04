@@ -2,7 +2,8 @@
 import { ROUTERS } from "@/utils/routers";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import { usePathname } from "next/navigation";
+import React, { useEffect, useState } from "react";
 
 type Props = {};
 const Menu = [
@@ -24,10 +25,24 @@ const Menu = [
 ];
 
 export default function MobileMenu({}: Props) {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const toggleMenu = () => {
     setOpen((prev) => !prev);
   };
+
+  useEffect(() => {
+    if (open) {
+      setOpen(false);
+    }
+    if (pathname === ROUTERS.HOME) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      const heroEl = document.getElementById("top");
+      const heroHeight = heroEl ? heroEl.offsetHeight : 0;
+      window.scrollTo({ top: heroHeight, behavior: "smooth" });
+    }
+  }, [pathname]);
   return (
     <>
       <span
@@ -79,7 +94,7 @@ export default function MobileMenu({}: Props) {
           {Menu.map((item) => (
             <Link
               key={item.id}
-              href={item.href}
+              href={`${item.href}`}
               className="w-full py-4 text-base font-bold border-b-[0.5px] last:border-b-0 border-solid border-primary/30"
             >
               {item.label}

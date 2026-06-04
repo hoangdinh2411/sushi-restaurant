@@ -5,8 +5,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Kontakt",
-  description:
-    `Kontakta ${META_DATA.appName} i Helsingborg. Adress: ${META_DATA.address}. Öppettider, telefon och karta.`,
+  description: `Kontakta ${META_DATA.appName} i Helsingborg. Adress: ${META_DATA.address}. Öppettider, telefon och karta.`,
   alternates: { canonical: "/contact" },
 };
 
@@ -16,8 +15,8 @@ const OPENING_HOURS = {
     { days: "Lördag – Söndag", hours: "12 – 21" },
   ],
   takeAway: [
-    { days: "Måndag – Torsdag", hours: "11.30 – 20" },
-    { days: "Lördag – Söndag", hours: "12 – 20" },
+    { days: "Måndag – Torsdag", hours: "11.30 – 21" },
+    { days: "Lördag – Söndag", hours: "12 – 21" },
   ],
 };
 
@@ -38,7 +37,10 @@ function HoursBlock({
   hours: typeof OPENING_HOURS.dineIn;
 }) {
   return (
-    <div className="text-center lg:text-left">
+    <div
+      className="text-center lg:text-left"
+      id="contact"
+    >
       <h3 className="text-lg font-semibold mb-4 tracking-wide">{title}</h3>
       <ul className="space-y-2">
         {hours.map(({ days, hours: h }) => (
@@ -57,7 +59,10 @@ function HoursBlock({
 
 export default function ContactPage() {
   return (
-    <article className="py-25 w-full max-w-5xl mx-auto px-4 lg:px-0">
+    <article
+      className="py-25 w-full max-w-5xl mx-auto px-4 lg:px-0"
+      id="contact"
+    >
       <div className="text-center mb-16">
         <h6 className="text-xl font-medium tracking-widest uppercase">
           {META_DATA.appName}

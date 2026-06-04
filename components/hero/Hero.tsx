@@ -6,7 +6,10 @@ type Props = {};
 
 export default function Hero({}: Props) {
   return (
-    <section className="bg-red  w-full relative  h-screen max-h-200">
+    <section
+      className="bg-red  w-full relative  h-screen max-h-200"
+      id="top"
+    >
       <video
         muted
         className="absolute left-0 top-0 size-full object-cover"

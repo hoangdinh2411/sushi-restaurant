@@ -7,59 +7,195 @@
       "group": "JAPAS",
       "description": null,
       "items": [
-        { "name": "Edamame Seasalt", "price": 60, "description": "Ångkokta bönor, citron, havsalt" },
-        { "name": "Edamame Spicy", "price": 70, "description": "Ångkokta bönor, citron, chilicream" },
-        { "name": "Edamame Teriyaki", "price": 65, "description": "Ångkokta bönor, citron, teriyakisås" },
-        { "name": "Miso Soppa", "price": 39, "description": "Välja mellan: tofu, räkor +10 kr och lax +10 kr. Sojabönpasta, sjögräs, vårlök, buljong" },
-        { "name": "Goma Wakame", "price": 49, "description": "Tångsallad, sesamfrö" },
-        { "name": "Sweet Potatis", "price": 59, "description": "Havsalt flingor och limeaioli" },
-        { "name": "Springroll Vegetarisk 5 pcs", "price": 49, "description": "Krispig mini vårrulla med vegetarisk fyllning, serveras med sweetchilisås" },
-        { "name": "Springroll Hemgjorda 2 pcs", "price": 49, "description": "Frasiga köttvårrula med glasnudlar, svamp, ägg, serveras med sweetchilisås" },
-        { "name": "Ebi Panko 4 pcs", "price": 99, "description": "Fritera räkor, chilimayo, teriyaki" },
-        { "name": "Fried Chicken", "price": 99, "description": "Krispig kyckling med sås" },
-        { "name": "Frys Chicken Vingar 5 pcs", "price": 99, "description": "Krispig kyckling vingar med sweet chili sås" },
-        { "name": "Bao Bun 2 pcs", "price": 109, "description": "Välja mellan: kyckling, beef, och räkor. Ångat bröd, picklad rödlök, sallad, chili mayo" },
-        { "name": "Dumpling", "price": 109, "description": "Välja mellan: kyckling, vegetarisk. Stekt dumpling med ponzusås" }
+        {
+          "name": "Edamame Seasalt",
+          "price": 60,
+          "description": "Ångkokta bönor, citron, havsalt"
+        },
+        {
+          "name": "Edamame Spicy",
+          "price": 70,
+          "description": "Ångkokta bönor, citron, chilicream"
+        },
+        {
+          "name": "Edamame Teriyaki",
+          "price": 65,
+          "description": "Ångkokta bönor, citron, teriyakisås"
+        },
+        {
+          "name": "Miso Soppa",
+          "price": 39,
+          "description": "Välja mellan: tofu, räkor +10 kr och lax +10 kr. Sojabönpasta, sjögräs, vårlök, buljong"
+        },
+        {
+          "name": "Goma Wakame",
+          "price": 49,
+          "description": "Tångsallad, sesamfrö"
+        },
+        {
+          "name": "Sweet Potatis",
+          "price": 59,
+          "description": "Havsalt flingor och limeaioli"
+        },
+        {
+          "name": "Springroll Vegetarisk 5 pcs",
+          "price": 49,
+          "description": "Krispig mini vårrulla med vegetarisk fyllning, serveras med sweetchilisås"
+        },
+        {
+          "name": "Springroll Hemgjorda 2 pcs",
+          "price": 49,
+          "description": "Frasiga köttvårrula med glasnudlar, svamp, ägg, serveras med sweetchilisås"
+        },
+        {
+          "name": "Ebi Panko 4 pcs",
+          "price": 99,
+          "description": "Fritera räkor, chilimayo, teriyaki"
+        },
+        {
+          "name": "Fried Chicken",
+          "price": 99,
+          "description": "Krispig kyckling med sås"
+        },
+        {
+          "name": "Frys Chicken Vingar 5 pcs",
+          "price": 99,
+          "description": "Krispig kyckling vingar med sweet chili sås"
+        },
+        {
+          "name": "Bao Bun 2 pcs",
+          "price": 109,
+          "description": "Välja mellan: kyckling, beef, och räkor. Ångat bröd, picklad rödlök, sallad, chili mayo"
+        },
+        {
+          "name": "Dumpling",
+          "price": 109,
+          "description": "Välja mellan: kyckling, vegetarisk. Stekt dumpling med ponzusås"
+        }
       ]
     },
     {
       "group": "SUSHI ROLLS",
       "description": null,
       "items": [
-        { "name": "California", "price": 149, "description": "Krabbröra, avokado, gurka" },
-        { "name": "Veggie Roll", "price": 149, "description": "Tofu, avokado, gurka" },
-        { "name": "Green Roll", "price": 149, "description": "Avokado, gurka, cream cheese, toppad med avokado" },
-        { "name": "Sake Roll", "price": 149, "description": "Lax, avokado, gurka" },
-        { "name": "Myzuki Special", "price": 159, "description": "Fritera räka, avokado, cream cheese, toppad med flamberad lax, teriyaki och chilimayo" },
-        { "name": "Ebi Tempura", "price": 159, "description": "Fritera räka, gurka, cream cheese, avokado, chilimayo, teriyaki" },
-        { "name": "Cream Cheese Roll", "price": 159, "description": "Rostad lök, gurka, avokado, cream cheese, lax" },
-        { "name": "Volcano", "price": 159, "description": "Fritera räka, avokado, spicy laxtartar" },
-        { "name": "Ebi Deluxe", "price": 169, "description": "Fritera räka, avokado, cream cheese, räka, aioli" },
-        { "name": "Deep Fry Roll", "price": 169, "description": "Välja mellan: salmon, chicken, beef, crab och ebi panko (räkor). Avokado, cream cheese, chilimayo, teriyaki" },
-        { "name": "Chicken Crunch", "price": 189, "description": "Krabbröra, gurka, cream cheese, topping med chicken pops" }
+        {
+          "name": "California",
+          "price": 149,
+          "description": "Krabbröra, avokado, gurka"
+        },
+        {
+          "name": "Veggie Roll",
+          "price": 149,
+          "description": "Tofu, avokado, gurka"
+        },
+        {
+          "name": "Green Roll",
+          "price": 149,
+          "description": "Avokado, gurka, cream cheese, toppad med avokado"
+        },
+        {
+          "name": "Sake Roll",
+          "price": 149,
+          "description": "Lax, avokado, gurka"
+        },
+        {
+          "name": "Myzuki Special",
+          "price": 159,
+          "description": "Fritera räka, avokado, cream cheese, toppad med flamberad lax, teriyaki och chilimayo"
+        },
+        {
+          "name": "Ebi Tempura",
+          "price": 159,
+          "description": "Fritera räka, gurka, cream cheese, avokado, chilimayo, teriyaki"
+        },
+        {
+          "name": "Cream Cheese Roll",
+          "price": 159,
+          "description": "Rostad lök, gurka, avokado, cream cheese, lax"
+        },
+        {
+          "name": "Volcano",
+          "price": 159,
+          "description": "Fritera räka, avokado, spicy laxtartar"
+        },
+        {
+          "name": "Ebi Deluxe",
+          "price": 169,
+          "description": "Fritera räka, avokado, cream cheese, räka, aioli"
+        },
+        {
+          "name": "Deep Fry Roll",
+          "price": 169,
+          "description": "Välja mellan: salmon, chicken, beef, crab och ebi panko (räkor). Avokado, cream cheese, chilimayo, teriyaki"
+        },
+        {
+          "name": "Chicken Crunch",
+          "price": 189,
+          "description": "Krabbröra, gurka, cream cheese, topping med chicken pops"
+        }
       ]
     },
     {
       "group": "NIGIRI",
       "description": "2 pcs: 50 kr / 10 pcs: 159 kr / 16 pcs: 239 kr",
       "items": [
-        { "name": "Halstrad Lax / Lax", "price": null, "description": "Välja mellan lax eller halstrad lax" },
-        { "name": "Halstrad Tonfisk / Tonfisk", "price": null, "description": "Välja mellan tonfisk eller halstrad tonfisk" },
-        { "name": "Halstrad Shrimp / Shrimp", "price": null, "description": "Välja mellan räka eller halstrad räka" },
+        {
+          "name": "Halstrad Lax / Lax",
+          "price": null,
+          "description": "Välja mellan lax eller halstrad lax"
+        },
+        {
+          "name": "Halstrad Tonfisk / Tonfisk",
+          "price": null,
+          "description": "Välja mellan tonfisk eller halstrad tonfisk"
+        },
+        {
+          "name": "Halstrad Shrimp / Shrimp",
+          "price": null,
+          "description": "Välja mellan räka eller halstrad räka"
+        },
         { "name": "Chefs Val", "price": null, "description": "Kockens val" },
-        { "name": "Vegetarisk Tofu", "price": null, "description": "Vegetarisk nigiri med tofu" },
-        { "name": "Duluxe (lax, räka)", "price": null, "description": "Nigiri med lax och räka" },
-        { "name": "Classic (lax, avokado)", "price": null, "description": "Nigiri med lax och avokado" }
+        {
+          "name": "Vegetarisk Tofu",
+          "price": null,
+          "description": "Vegetarisk nigiri med tofu"
+        },
+        {
+          "name": "Duluxe (lax, räka)",
+          "price": null,
+          "description": "Nigiri med lax och räka"
+        },
+        {
+          "name": "Classic (lax, avokado)",
+          "price": null,
+          "description": "Nigiri med lax och avokado"
+        }
       ]
     },
     {
       "group": "YAKIMONO",
       "description": null,
       "items": [
-        { "name": "Yakiniku", "price": 189, "description": "Marinerad beef, sallad, ris, teriyakisås" },
-        { "name": "Chicken Katsu", "price": 169, "description": "Krispy kyckling filé, ris, sallad, sås" },
-        { "name": "Laxfjällril", "price": 189, "description": "Stekte lax, ris, sallad, teriyaki sås" },
-        { "name": "Udon Nudlar", "price": 189, "description": "Välja mellan: chicken katsu och krispigt anka. Udon nudlar, grönsaker" }
+        {
+          "name": "Yakiniku",
+          "price": 189,
+          "description": "Marinerad beef, sallad, ris, teriyakisås"
+        },
+        {
+          "name": "Chicken Katsu",
+          "price": 169,
+          "description": "Krispy kyckling filé, ris, sallad, sås"
+        },
+        {
+          "name": "Laxfjällril",
+          "price": 189,
+          "description": "Stekte lax, ris, sallad, teriyaki sås"
+        },
+        {
+          "name": "Udon Nudlar",
+          "price": 189,
+          "description": "Välja mellan: chicken katsu och krispigt anka. Udon nudlar, grönsaker"
+        }
       ]
     },
     {
@@ -79,28 +215,68 @@
       "group": "SASHIMI",
       "description": null,
       "items": [
-        { "name": "Sashimi Lax", "price": 199, "description": "Serveras med sushiris, avokado, grönsaker och tillbehör" },
-        { "name": "Duo Sashimi", "price": 209, "description": "Serveras med sushiris, avokado, grönsaker, tillbehör, lax och tonfisk" }
+        {
+          "name": "Sashimi Lax",
+          "price": 199,
+          "description": "Serveras med sushiris, avokado, grönsaker och tillbehör"
+        },
+        {
+          "name": "Duo Sashimi",
+          "price": 209,
+          "description": "Serveras med sushiris, avokado, grönsaker, tillbehör, lax och tonfisk"
+        }
       ]
     },
     {
       "group": "MYZUKI SET",
       "description": null,
       "items": [
-        { "name": "Mimi 8 pcs", "price": 119, "description": "4 pcs california maki. Nigiri: 2 lax, 1 räka, 1 tonfisk" },
-        { "name": "Kawasaki 12 pcs", "price": 149, "description": "8 pcs sake maki. Nigiri: 2 lax, 1 räka, 1 tonfisk" },
-        { "name": "Sakura 20 pcs", "price": 289, "description": "8 pcs sake roll, 4 pcs california. Nigiri: 3 lax, 2 räkor, 2 tonfisk, 1 avokado" },
-        { "name": "Nagoya 30 pcs", "price": 389, "description": "8 pcs hemgjorda ebi roll, 8 pcs sake roll, 4 pcs california. Nigiri: 4 lax, 2 räkor, 2 tonfisk, 2 avokado" },
-        { "name": "Party 50 pcs", "price": 669, "description": "8 pcs hemgjorda ebi roll, 8 pcs sake roll, 8 pcs california, 8 pcs green roll. Nigiri: 6 lax, 6 räkor, 3 tonfisk, 3 avokado" }
+        {
+          "name": "Mimi 8 pcs",
+          "price": 119,
+          "description": "4 pcs california maki. Nigiri: 2 lax, 1 räka, 1 tonfisk"
+        },
+        {
+          "name": "Kawasaki 12 pcs",
+          "price": 149,
+          "description": "8 pcs sake maki. Nigiri: 2 lax, 1 räka, 1 tonfisk"
+        },
+        {
+          "name": "Sakura 20 pcs",
+          "price": 289,
+          "description": "8 pcs sake roll, 4 pcs california. Nigiri: 3 lax, 2 räkor, 2 tonfisk, 1 avokado"
+        },
+        {
+          "name": "Nagoya 30 pcs",
+          "price": 389,
+          "description": "8 pcs hemgjorda ebi roll, 8 pcs sake roll, 4 pcs california. Nigiri: 4 lax, 2 räkor, 2 tonfisk, 2 avokado"
+        },
+        {
+          "name": "Party 50 pcs",
+          "price": 669,
+          "description": "8 pcs hemgjorda ebi roll, 8 pcs sake roll, 8 pcs california, 8 pcs green roll. Nigiri: 6 lax, 6 räkor, 3 tonfisk, 3 avokado"
+        }
       ]
     },
     {
       "group": "MYZUKI DELUXE",
       "description": null,
       "items": [
-        { "name": "Kochi 16 pcs", "price": 269, "description": "8 pcs ebi tempura. Nigiri: 2 halstrad lax, 2 halstrad räkor, 2 avokado, 2 tonfisk" },
-        { "name": "Osaka 24 pcs", "price": 369, "description": "8 pcs myzuki special, 4 pcs chicken crunch. Nigiri: 3 halstrad lax, 3 lax, 2 halstrad tonfisk, 2 räkor, 2 avokado" },
-        { "name": "Tokyo 40 pcs", "price": 589, "description": "8 pcs volcano, 8 pcs cream cheese roll, 8 pcs ebi tempura. Nigiri: 4 lax, 3 halstrad lax, 3 tonfisk, 3 halstrad räkor, 3 avokado" }
+        {
+          "name": "Kochi 16 pcs",
+          "price": 269,
+          "description": "8 pcs ebi tempura. Nigiri: 2 halstrad lax, 2 halstrad räkor, 2 avokado, 2 tonfisk"
+        },
+        {
+          "name": "Osaka 24 pcs",
+          "price": 369,
+          "description": "8 pcs myzuki special, 4 pcs chicken crunch. Nigiri: 3 halstrad lax, 3 lax, 2 halstrad tonfisk, 2 räkor, 2 avokado"
+        },
+        {
+          "name": "Tokyo 40 pcs",
+          "price": 589,
+          "description": "8 pcs volcano, 8 pcs cream cheese roll, 8 pcs ebi tempura. Nigiri: 4 lax, 3 halstrad lax, 3 tonfisk, 3 halstrad räkor, 3 avokado"
+        }
       ]
     },
     {
@@ -118,32 +294,38 @@
         { "name": "Vegan Chilimayo", "price": 15, "description": null }
       ]
     },
-    {
-      "group": "A TASTE OF VIETNAM",
-      "description": null,
-      "items": [
-        { "name": "Pho", "price": 169, "description": "Välja mellan kyckling, biff och räkor. Vietnamesisk risnudelsoppa med böngroddar och örter. Buljong av hönsbas. Innehåller fisksås och spårämne av gluten" },
-        { "name": "Bun Thit Nuong", "price": 159, "description": "Ris Vermicelli, grilla karre, citrongräss, oystersås, honung, rostade jordnötter, sallad, rotfrukter, örter, fisksås. Innehåller gluten" },
-        { "name": "Ris Nudlar med Vårulla", "price": 149, "description": "Välja mellan vegetarisk eller fläsk. Ris Vermicelli, skogöron (svamp), sallad, örter, fisksås. Innehåller gluten" },
-        { "name": "Udon Nudlar", "price": 189, "description": "Välja mellan: chicken katsu och krispigt anka. Udon nudlar, grönsaker" },
-        { "name": "Grill Duck", "price": 189, "description": "Krispy anka, ris eller stekt nudlar, sallad med peking sås" }
-      ]
-    },
+
     {
       "group": "TO END WITH",
       "description": null,
       "items": [
-        { "name": "Mochi Glass", "price": 80, "description": "Mochi glass i olika smaker" },
+        {
+          "name": "Mochi Glass",
+          "price": 80,
+          "description": "Mochi glass i olika smaker"
+        },
         { "name": "Fritera Glass", "price": 79, "description": null },
-        { "name": "Vanilj Glass med Choklad Sås", "price": 69, "description": null }
+        {
+          "name": "Vanilj Glass med Choklad Sås",
+          "price": 69,
+          "description": null
+        }
       ]
     },
     {
       "group": "KIDS MENY",
       "description": "Inkl. mer dryck 89 kr",
       "items": [
-        { "name": "Bento", "price": 89, "description": "2 valfri nigiri, 2 yakitori, ris" },
-        { "name": "Mini Fried Chicken", "price": 89, "description": "2 kycklingvingar, chicken pops, ris" }
+        {
+          "name": "Bento",
+          "price": 89,
+          "description": "2 valfri nigiri, 2 yakitori, ris"
+        },
+        {
+          "name": "Mini Fried Chicken",
+          "price": 89,
+          "description": "2 kycklingvingar, chicken pops, ris"
+        }
       ]
     }
   ]
