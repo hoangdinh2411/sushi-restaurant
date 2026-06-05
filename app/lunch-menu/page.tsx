@@ -24,15 +24,18 @@ export default function LunchMenuPage({}: Props) {
         <b className="text-2xl font-bold ">11:30-14</b>
       </div>
 
-      <div className="space-y-8">
-        <div className="flex justify-between gap-3 lg:gap-6 flex-wrap w-full max-w-xl mx-auto ">
-          <p className="group relative text-base lg:text-lg font-bold after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out after:content-[''] hover:after:w-full">
+      <div className="space-y-8 max-w-lg mx-auto ">
+        <div className="grid grid-cols-2 gap-8">
+          <p className="group relative text-base lg:text-lg font-bold ">
+            Japanska bowl
+          </p>
+          <p className="group relative text-base lg:text-lg font-bold ">
             Stekta nudlar
           </p>
-          <p className="group relative text-base lg:text-lg font-bold after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out after:content-[''] hover:after:w-full">
+          <p className="group relative text-base lg:text-lg font-bold ">
             Ris med chicken katsu
           </p>
-          <p className="group relative text-base lg:text-lg font-bold after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out after:content-[''] hover:after:w-full">
+          <p className="group relative text-base lg:text-lg font-bold ">
             Yakiniku
           </p>
         </div>

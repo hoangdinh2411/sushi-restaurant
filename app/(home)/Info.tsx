@@ -11,15 +11,18 @@ export default function Info({}: Props) {
         {/* Row 1: Text | Image */}
         <div className="flex flex-wrap ">
           <div className="w-full lg:w-1/2 flex justify-center  h-auto  min-h-120 sm:min-h-100  lg:h-150  items-center flex-col ">
-            <div className="w-full max-w-auto p-8 sm:p-12 lg:p-0 lg:max-w-[320px] text-primary">
-              <h3 className="text-5xl/13 font-medium w-full text-left">
-                Ta dig bortom traditionell sushi
+            <div className="w-full max-w-auto p-8 sm:p-12 lg:p-0 lg:max-w-100 text-primary">
+              <h3 className="text-3xl lg:text-5xl leading-10 lg:leading-16  font-medium w-full text-left">
+                Upptäck {META_DATA.appName} - Din destination för en smakresa
+                genom Asien
               </h3>
-              <p className="text-sm/6 mt-2">
-                På {META_DATA.appName} prövar vi ständigt nya kombinationer och
-                smaker. Modernt, nyfiket och internationellt, samtidigt som det
-                slår an på det traditionella hantverket. Som gäst ska du alltid
-                känna dig positivt överraskad.
+              <p className="text-sm lg:text-base leading-6 mt-2">
+                Vi välkomnar dig till en värld av exklusiva smaker, kvalitet,
+                färska råvaror och modern asiatisk matkonst. På Myzuki Sushi &
+                Asiatisk Restaurang möts tradition och innovation i en elegant
+                miljö där varje rätt tillagas med precision, passion och omsorg.
+                Oavsett om du besöker oss för lunch, middag eller en speciell
+                stund tillsammans med familjer, kollegor eller vänner
               </p>
             </div>
           </div>
@@ -42,14 +45,16 @@ export default function Info({}: Props) {
           <div className="w-full lg:w-1/2 flex order-1 lg:order-2 justify-center h-auto min-h-120  sm:min-h-100  lg:h-150 items-center flex-col">
             <div className="w-full max-w-auto p-8 sm:p-12 lg:p-0 lg:max-w-[320px] text-primary">
               <h3 className="text-5xl/13 font-medium w-full text-left">
-                Asian fusion, på vårt vis
+                Hantverk från noggrant utvalda råvaror
               </h3>
               <p className="text-sm/6 mt-2">
-                Från start har {META_DATA.appName} mål varit att förändra
-                sushilandskapet och göra sushi tillgängligt för alla. Vi arbetar
-                med att förena det svenska med det japanska. Traditionell
-                japansk kvalitetssushi förenat med svenska smaker och svensk
-                service kombinerat med japansk gästfrihet.
+                Vi tror att fantastisk mat börjar med noggrant utvalda råvaror.
+                Därför använder vi färska ingredienser och traditionella
+                tillagningsmetoder i kombination med moderna influenser för att
+                skapa smaker som både överraskar och inspirerar. Från handgjord
+                sushi och färsk sashimi till asiatiska specialiteter och varma
+                rätter – varje servering är skapad med precision och omsorg. Mer
+                än sushi – en upplevelse.
               </p>
             </div>
           </div>

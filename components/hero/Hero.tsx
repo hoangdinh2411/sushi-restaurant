@@ -1,3 +1,4 @@
+import { META_DATA } from "@/utils/constant";
 import { ROUTERS } from "@/utils/routers";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,8 +18,12 @@ export default function Hero({}: Props) {
         autoPlay
         src="https://www.sushievolushi.se/wp-content/uploads/2025/04/video_12.mp4"
       ></video>
-      <div className="absolute bottom-40 lg:bottom-60 left-1/2 -translate-x-1/2">
-        <div className=" flex gap-8 items-center flex-col lg:flex-row">
+      <div className="absolute bottom-20 lg:bottom-60 left-1/2 -translate-x-1/2 w-2/3 ">
+        <p className=" text-2xl md:text-3xl/14 lg:text-4xl/14   mb-10 font-semibold w-full text-center">
+          Färsk sushi, autentiska asiatiska smaker och en matupplevelse att
+          minnas
+        </p>
+        <div className=" flex gap-8 items-center justify-center flex-col lg:flex-row">
           <Link
             className="header-button group"
             href={ROUTERS.LUNCH_MENU}
