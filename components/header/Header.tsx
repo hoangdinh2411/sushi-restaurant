@@ -6,7 +6,7 @@ type Props = {};
 
 export default function Header({}: Props) {
   return (
-    <header className="h-auto py-5 min-h-20  px-2 lg:px-4 fixed top-0  left-0 w-full z-50 flex items-center justify-center">
+    <header className="h-auto py-5 min-h-20  px-2 lg:px-4 fixed top-0  left-0 w-full z-50 flex items-center justify-start">
       <Link
         href="/"
         className="hidden lg:block"
