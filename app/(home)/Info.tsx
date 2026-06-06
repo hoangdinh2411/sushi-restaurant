@@ -44,9 +44,11 @@ export default function Info({}: Props) {
                 Från råvara till tallrik – med precision
               </h3>
               <p className="text-sm lg:text-base leading-relaxed mt-4">
-                Vi väljer varje ingrediens med omsorg. Handgjord sushi, färsk
-                sashimi och varma asiatiska rätter – varje servering är en
+                Vi tror att fantastisk mat börjar med noggrant utvalda råvaror.
+                Därför vi väljer varje ingrediens med omsorg. Handgjord sushi,
+                färsk sashimi och varma asiatiska rätter – varje servering är en
                 upplevelse.
+                <br /> <b> Smak. Kvalitet. Upplevelse.</b>
               </p>
             </div>
           </div>
