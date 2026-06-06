@@ -17,9 +17,14 @@ export default function FollowOss({}: Props) {
           href="#"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 border-2 border-primary text-primary px-10 py-4 font-semibold hover:bg-primary hover:text-secondary transition-colors"
+          className="inline-flex items-center gap-3 border-2 border-primary text-primary px-10 py-4 font-semibold hover:bg-black  transition-colors"
         >
-          <Image src="/icons/facebook.svg" alt="Facebook" width={20} height={20} />
+          <Image
+            src="/icons/facebook.svg"
+            alt="Facebook"
+            width={20}
+            height={20}
+          />
           Besök oss på Facebook
         </a>
       </div>

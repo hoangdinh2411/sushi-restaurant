@@ -1,7 +1,6 @@
 import { META_DATA } from "@/utils/constant";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 type Props = {};
 
