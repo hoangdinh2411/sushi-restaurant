@@ -18,10 +18,9 @@ export default function Hero({}: Props) {
         autoPlay
         src="https://www.sushievolushi.se/wp-content/uploads/2025/04/video_12.mp4"
       ></video>
-      <div className="absolute bottom-20 lg:bottom-60 left-1/2 -translate-x-1/2 w-2/3 ">
-        <p className=" text-2xl md:text-3xl/14 lg:text-4xl/14   mb-10 font-semibold w-full text-center">
-          Färsk sushi, autentiska asiatiska smaker och en matupplevelse att
-          minnas
+      <div className="absolute bottom-20 lg:bottom-60 left-1/2 -translate-x-1/2 w-4/5 md:w-2/3">
+        <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-snug mb-10 font-semibold w-full text-center">
+          Autentisk sushi. Äkta smaker. Oförglömliga stunder.
         </p>
         <div className=" flex gap-8 items-center justify-center flex-col lg:flex-row">
           <Link

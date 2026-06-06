@@ -14,12 +14,12 @@ const data = [{}];
 export default function LunchMenuPage({}: Props) {
   return (
     <article
-      className="py-25 w-full max-w-2xl mx-auto px-4 "
+      className="py-16 lg:py-25 w-full max-w-2xl mx-auto px-4"
       id="lunch-menu"
     >
       <div className="mx-auto text-center px-2 mb-15">
         <h6 className="text-[20px] font-medium">{META_DATA.appName}</h6>
-        <h2 className="my-6 leading-14">Lunch Meny 139kr</h2>
+        <h2 className="my-6 text-3xl lg:text-5xl leading-tight">Lunch Meny 139kr</h2>
         <p className="my-4 opacity-70">Miso soppa, kaffe, te ingår</p>
         <b className="text-2xl font-bold ">11:30-14</b>
       </div>

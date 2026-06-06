@@ -8,7 +8,7 @@ export default function OpeningHours() {
           Öppettider {META_DATA.appName}
         </h2>
 
-        <div className="space-y-3 text-lg ld:text-2xl font-bold">
+        <div className="space-y-3 text-lg lg:text-2xl font-bold">
           <p>Måndag – Torsdag 11.30 – 21</p>
           <p>Lördag - Söndag 12 – 21</p>
         </div>
@@ -30,9 +30,7 @@ export default function OpeningHours() {
             Google-profil för aktuella tider.
           </p>
           <p className="leading-relaxed max-w-3xl mx-auto">
-            (Drop in finns i mån av plats. På uteserveringen tar{" "}
-            {META_DATA.appName}
-            endast Drop in-gäster, välkomna)
+            Drop in välkomnas i mån av plats. På uteserveringen tar vi enbart drop in-gäster.
           </p>
         </div>
       </div>

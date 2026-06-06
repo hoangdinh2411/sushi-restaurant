@@ -10,7 +10,7 @@ export default function FollowOss({}: Props) {
         Följ oss på Facebook
       </h3>
       <p className="text-center text-primary mb-8 text-base">
-        Håll dig uppdaterad med våra senaste nyheter och erbjudanden
+        Nyheter, erbjudanden och smakglimt direkt i ditt flöde
       </p>
       <div className="flex justify-center mb-8">
         <a
@@ -23,7 +23,7 @@ export default function FollowOss({}: Props) {
           Besök oss på Facebook
         </a>
       </div>
-      <div className="w-full max-w-5xl mx-auto grid grid-cols-3 gap-2 lg:gap-4 ">
+      <div className="w-full max-w-5xl mx-auto grid grid-cols-3 gap-2 lg:gap-4 px-4 lg:px-0">
         <figure className="relative col-span-1 aspect-square bg-black rounded overflow-hidden">
           <Image
             src="/images/logo.png"

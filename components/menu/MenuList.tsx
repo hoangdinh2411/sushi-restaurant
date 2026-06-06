@@ -46,7 +46,7 @@ export default function MenuList({ groups }: { groups: MenuGroup[] }) {
             id={group.group}
           >
             <div className="mb-6 border-b border-primary/20 pb-4">
-              <h3 className="text-[42px] font-semibold tracking-widest">
+              <h3 className="text-2xl sm:text-3xl lg:text-[42px] font-semibold tracking-widest">
                 {group.group}
               </h3>
               {group.description && (

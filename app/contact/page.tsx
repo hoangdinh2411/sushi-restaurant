@@ -60,7 +60,7 @@ function HoursBlock({
 export default function ContactPage() {
   return (
     <article
-      className="py-25 w-full max-w-5xl mx-auto px-4 lg:px-0"
+      className="py-16 lg:py-25 w-full max-w-5xl mx-auto px-4 lg:px-0"
       id="contact"
     >
       <div className="text-center mb-16">

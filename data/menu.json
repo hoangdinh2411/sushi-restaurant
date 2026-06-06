@@ -280,6 +280,22 @@
       ]
     },
     {
+      "group": "KIDS MENY",
+      "description": "Inkl. mer dryck 89 kr",
+      "items": [
+        {
+          "name": "Bento",
+          "price": 89,
+          "description": "2 valfri nigiri, 2 yakitori, ris"
+        },
+        {
+          "name": "Mini Fried Chicken",
+          "price": 89,
+          "description": "2 kycklingvingar, chicken pops, ris"
+        }
+      ]
+    },
+    {
       "group": "SIDEDISH",
       "description": null,
       "items": [
@@ -309,22 +325,6 @@
           "name": "Vanilj Glass med Choklad Sås",
           "price": 69,
           "description": null
-        }
-      ]
-    },
-    {
-      "group": "KIDS MENY",
-      "description": "Inkl. mer dryck 89 kr",
-      "items": [
-        {
-          "name": "Bento",
-          "price": 89,
-          "description": "2 valfri nigiri, 2 yakitori, ris"
-        },
-        {
-          "name": "Mini Fried Chicken",
-          "price": 89,
-          "description": "2 kycklingvingar, chicken pops, ris"
         }
       ]
     }
