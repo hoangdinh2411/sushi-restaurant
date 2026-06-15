@@ -6,7 +6,7 @@ import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import Hero from "@/components/hero/Hero";
 import { META_DATA } from "@/utils/constant";
-import GoogleAnalytics from "@/components/google/GoogleAnalystic";
+import GoogleAnalytics from "@/components/google/GoogleAnalytics";
 
 const APP_TITLE = `${META_DATA.appName} – Sushi & Japansk Mat i Helsingborg`;
 
