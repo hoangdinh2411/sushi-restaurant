@@ -1,8 +1,23 @@
-import menuData from "@/data/menu.json";
 import Link from "next/link";
 
-type MenuItem = (typeof menuData.menu)[0]["items"][0];
-type MenuGroup = (typeof menuData.menu)[0];
+export type MenuItem = {
+  name: string;
+  price: number | null;
+  description: string | null;
+};
+
+export type MenuGroup = {
+  group: string;
+  description: string | null;
+  items: MenuItem[];
+};
+
+export type Menu = {
+  restaurant: string;
+  address: string;
+  website: string;
+  menu: MenuGroup[];
+};
 
 const LONG_DESC_THRESHOLD = 60;
 
