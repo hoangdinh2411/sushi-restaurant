@@ -17,13 +17,12 @@ export const metadata: Metadata = {
   },
   description: `Välkommen till ${META_DATA.appName} – din destination för autentisk sushi, japanska bowls och vietnamesisk mat i Helsingborg. Beställ take away eller boka bord.`,
   keywords: [
-    "sushi",
-    "japansk mat",
-    "helsingborg",
-    "take away",
-    "myzushi",
-    "japanska bowls",
-    "vietnamesisk mat",
+    "sushi helsingborg",
+    "lunch helsingborg",
+    "asiatisk mat helsingborg",
+    "sushi takeaway",
+    "japansk restaurang helsingborg",
+    "sushi restaurant sweden",
   ],
   authors: [{ name: META_DATA.appName, url: META_DATA.baseUrl }],
   creator: META_DATA.appName,
@@ -57,7 +56,7 @@ export const metadata: Metadata = {
     description: `Välkommen till ${META_DATA.appName} – autentisk sushi, japanska bowls och vietnamesisk mat i Helsingborg.`,
     images: [
       {
-        url: "/images/og-image.jpg",
+        url: `${META_DATA.baseUrl}/images/og-image.jpg`,
         width: 1200,
         height: 630,
         alt: APP_TITLE,
@@ -97,7 +96,19 @@ export default function RootLayout({
       lang="sv"
       className={`${workSans.variable}  h-full antialiased`}
     >
+      <head>
+        <meta
+          name="theme-color"
+          content="#000000"
+        />
+      </head>
       <body>
+        <a
+          href="#content"
+          className="sr-only focus:not-sr-only"
+        >
+          Hoppa till innehåll
+        </a>
         <ParallaxScrollProvider>
           <main>
             <Header />

@@ -1,12 +1,23 @@
+export const revalidate = 86400;
+
 import type { Metadata } from "next";
 import { META_DATA } from "@/utils/constant";
 import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Kontakt",
+  title: `Kontakt | ${META_DATA.appName} Helsingborg`,
   description: `Kontakta ${META_DATA.appName} i Helsingborg. Adress: ${META_DATA.address}. Öppettider, telefon och karta.`,
-  alternates: { canonical: "/contact" },
+  alternates: {
+    canonical: `${META_DATA.domain}/contact`,
+  },
+  openGraph: {
+    title: `Kontakt | ${META_DATA.appName}`,
+    description: `Restaurang i Helsingborg. Se öppettider, adress och karta.`,
+    url: `${META_DATA.domain}/contact`,
+    siteName: META_DATA.appName,
+    type: "website",
+  },
 };
 
 const OPENING_HOURS = {
@@ -37,23 +48,42 @@ function HoursBlock({
   hours: typeof OPENING_HOURS.dineIn;
 }) {
   return (
-    <div
-      className="text-center lg:text-left"
-      id="contact"
-    >
-      <h3 className="text-lg font-semibold mb-4 tracking-wide">{title}</h3>
-      <ul className="space-y-2">
-        {hours.map(({ days, hours: h }) => (
-          <li
-            key={days}
-            className="flex justify-center lg:justify-between gap-4 lg:gap-8 text-sm flex-wrap"
-          >
-            <span className="text-primary/70">{days}</span>
-            <span className="font-medium">{h}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Restaurant",
+            name: META_DATA.appName,
+            url: META_DATA.domain + "/contact",
+            telephone: META_DATA.phone,
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: META_DATA.address,
+              addressLocality: "Helsingborg",
+              addressCountry: "SE",
+            },
+            openingHours: ["Mo-Th 11:30-21:00", "Sa-Su 12:00-21:00"],
+            servesCuisine: ["Japanese", "Asian"],
+          }),
+        }}
+      />
+      <div className="text-center lg:text-left">
+        <h3 className="text-lg font-semibold mb-4 tracking-wide">{title}</h3>
+        <ul className="space-y-2">
+          {hours.map(({ days, hours: h }) => (
+            <li
+              key={days}
+              className="flex justify-center lg:justify-between gap-4 lg:gap-8 text-sm flex-wrap"
+            >
+              <span className="text-primary/70">{days}</span>
+              <span className="font-medium">{h}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
   );
 }
 
@@ -67,7 +97,14 @@ export default function ContactPage() {
         <h6 className="text-xl font-medium tracking-widest uppercase">
           {META_DATA.appName}
         </h6>
-        <h2 className="my-6 text-4xl lg:text-5xl font-semibold">Kontakt</h2>
+        <h1 className="my-6 text-4xl lg:text-5xl font-semibold">
+          {" "}
+          Kontakt & Öppettider i Helsingborg
+        </h1>
+        <p className="text-sm text-primary/60 mt-4">
+          Japansk restaurang i Helsingborg som serverar sushi, bowls och
+          vietnamesisk mat. Se öppettider, karta och kontaktinformation.
+        </p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
